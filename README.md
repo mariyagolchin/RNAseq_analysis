@@ -65,6 +65,14 @@ done
 
 ## RNAseq tutorial - part 3 - generating count table
 
+
+
+
+
+
+
+
+
 <br>
 
 # screen Commands
