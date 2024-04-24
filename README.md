@@ -27,7 +27,7 @@ screen -X -S 3207503.run_star quit
 <br>
 ==================================================================
 1-download file: 
-```- wget http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
+```bash wget http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
 <br>
 - wget https://ftp.ensembl.org/pub/release-111/gtf/homo_sapiens/Homo_sapiens.GRCh38.111.gtf.gz
 <br>
@@ -35,17 +35,18 @@ screen -X -S 3207503.run_star quit
 ```
 <br>
 2- move all 8 fastq to server:
-```
+```bash
 scp D:/PHD/1_Thesis/5_Run_Server_Analysis/0_RNA-Seq_Analysis_Runinggggg/fastq/*.gz golchinpour@172.18.57.208:/home/golchinpour/projects/RNAseq-Analysis/fastq
 ```
 <br>
 3-gunzip *.fastq.gz
 <br>
 4- Reference genome and annotation with star:
-```STAR --runMode genomeGenerate --genomeDir ref/ --genomeFastaFiles Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa --sjdbGTFfile Homo_sapiens.GRCh38.105.gtf--runThreadN 16
+```bash
+STAR --runMode genomeGenerate --genomeDir ref/ --genomeFastaFiles Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa --sjdbGTFfile Homo_sapiens.GRCh38.105.gtf--runThreadN 16
 ```
 <br>
-5-
+5- run star for all fastq files
 #!/bin/bash
 <br>
 # Directory containing the FASTQ files
