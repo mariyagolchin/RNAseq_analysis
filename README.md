@@ -28,14 +28,14 @@ screen -X -S 3207503.run_star quit
 ==================================================================
 1-download file: 
 
-```bash wget http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
-<br>
-- wget https://ftp.ensembl.org/pub/release-111/gtf/homo_sapiens/Homo_sapiens.GRCh38.111.gtf.gz
-<br>
--download fastq file from: https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA720431&o=acc_s%3Aa
+```bash
+wget http://ftp.ensembl.org/pub/release-105/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa.gz
+wget https://ftp.ensembl.org/pub/release-111/gtf/homo_sapiens/Homo_sapiens.GRCh38.111.gtf.gz
+-download fastq file from:
+ https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA720431&o=acc_s%3Aa
 ```
-
 <br>
+
 2- move all 8 fastq to server:
 
 ```bash
@@ -53,9 +53,7 @@ STAR --runMode genomeGenerate --genomeDir ref/ --genomeFastaFiles Homo_sapiens.G
 
 <br>
 5- run star for all fastq files
-
-#!/bin/bash
-<br>
+```bash
 # Directory containing the FASTQ files
 fastq_dir="fastq"
 <br>
@@ -79,6 +77,8 @@ for file in "${fastq_dir}"/*.fastq; do
          --runThreadN 12 \
          --outFileNamePrefix "${output_dir}/${filename_without_extension}"
 done
+```
+
 
 
 
