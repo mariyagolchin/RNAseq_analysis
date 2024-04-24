@@ -25,7 +25,7 @@ ctrl+D or type: exit
 screen -X -S 3207503.run_star quit
 ```
 <br>
-==================================================================
+
 1-download file: 
 
 ```bash
