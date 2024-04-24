@@ -3,6 +3,7 @@
 [Reference: sanbomics.com](https://www.youtube.com/watch?v=9D1dToIQqls&amp;list=PLi1VnGoeDGjvHvl83QySD2oAQYFHPRYso&amp;index=2)
 
 
+## RNAseq tutorial - part 1 - building STAR genome index
 
 1-download file: 
 
@@ -32,6 +33,9 @@ STAR --runMode genomeGenerate --genomeDir ref/ --genomeFastaFiles Homo_sapiens.G
 ```
 
 <br>
+
+## RNAseq tutorial - part 2 - Aligning reads with STAR
+
 5- run star for all fastq files
 
 ```bash
@@ -58,6 +62,8 @@ for file in "${fastq_dir}"/*.fastq; do
          --outFileNamePrefix "${output_dir}/${filename_without_extension}"
 done
 ```
+
+## RNAseq tutorial - part 3 - generating count table
 
 <br>
 
