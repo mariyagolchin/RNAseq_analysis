@@ -86,8 +86,8 @@ ls
 
 ```bash
  ls
-bams       count.out.summary  genomeDir                    Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa  ref
-count.out  fastq              Homo_sapiens.GRCh38.111.gtf  mapped
+#bams       count.out.summary  genomeDir                    Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa  ref
+#count.out  fastq              Homo_sapiens.GRCh38.111.gtf  mapped
 ```
 
 copy count.out from server to my pc:
@@ -95,6 +95,10 @@ copy count.out from server to my pc:
 ```bash
 scp golchinpour@172.18.57.208:/home/golchinpour/projects/RNAseq-Analysis/count.out D:\PHD\1_Thesis\5_Run_Server_Analysis\0_RNA-Seq_Analysis_Runinggggg
 ```
+
+# RNAseq tutorial – part 4 – Differential expression analysis with Deseq2
+
+
 
 
 # screen Commands
