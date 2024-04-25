@@ -93,7 +93,7 @@ ls
 copy count.out from server to my pc:
 
 ```bash
-scp golchinpour@172.18.57.208:/home/golchinpour/projects/RNAseq-Analysis/count.out D:\PHD\1_Thesis\5_Run_Server_Analysis\0_RNA-Seq_Analysis_Runinggggg
+scp golchinpour@"serverip":/home/golchinpour/projects/RNAseq-Analysis/count.out D:\PHD\1_Thesis\5_Run_Server_Analysis\0_RNA-Seq_Analysis_Runinggggg
 ```
 
 # RNAseq tutorial – part 4 – Differential expression analysis with Deseq2
