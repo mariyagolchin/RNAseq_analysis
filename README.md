@@ -66,14 +66,36 @@ done
 ## RNAseq tutorial - part 3 - generating count table
 
 
+```bash
+~/projects/RNAseq-Analysis$ ls bams/
+SRR14168768Aligned.sortedByCoord.out.bam  SRR14168775Aligned.sortedByCoord.out.bam  SRR14168780Aligned.sortedByCoord.out.bam
+SRR14168771Aligned.sortedByCoord.out.bam  SRR14168776Aligned.sortedByCoord.out.bam  SRR14168783Aligned.sortedByCoord.out.bam
+SRR14168772Aligned.sortedByCoord.out.bam  SRR14168779Aligned.sortedByCoord.out.bam
+```
 
+```bash
+conda install -c bioconda subread
 
+ls
+# bams  fastq  genomeDir  Homo_sapiens.GRCh38.111.gtf  Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa  mapped  ref  run_mapp_for_all_fastq.sh
+```
 
+```bash
+ featureCounts -a Homo_sapiens.GRCh38.111.gtf -o count.out -T 8 bams/*.bam
+```
 
+```bash
+ ls
+bams       count.out.summary  genomeDir                    Homo_sapiens.GRCh38.dna_sm.primary_assembly.fa  ref
+count.out  fastq              Homo_sapiens.GRCh38.111.gtf  mapped
+```
 
+copy count.out from server to my pc:
 
+```bash
+scp golchinpour@172.18.57.208:/home/golchinpour/projects/RNAseq-Analysis/count.out D:\PHD\1_Thesis\5_Run_Server_Analysis\0_RNA-Seq_Analysis_Runinggggg
+```
 
-<br>
 
 # screen Commands
 ```bash
