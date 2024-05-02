@@ -5,6 +5,10 @@
 
 ## RNAseq tutorial - part 1 - building STAR genome index
 
+1-download DATA: NCBI-GEO-GSE171663: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE171663
+
+![image](https://github.com/mariyagolchin/RNAseq_analysis/assets/20231107/fa52f7ad-bea0-424d-a187-e08158f2d1b3)
+
 1-download file: 
 
 ```bash
