@@ -129,6 +129,42 @@ screen -X -S 3207503.run_star quit
 
 
 
+# Command line, basics
+```bash
 
+pwd
+more
+less
+cp
+mv
+mkdir
+ls
+cd
+chmod
+rm
+find
 
+Two useful tips:
+- use TAB on your keyboard for command and name completion.
+- the up arrow allows to browse your history (also available with history)
+
+create a fake file by using
+echo "hello world" > filetest see if this file is present ls -l
+read it
+more fileTest
+Of note, less is an alternative to more
+rename it
+mv fileTest test
+check
+ls -l
+create a folder
+mkdir TEST
+
+nano
+often installed, it is easy to use as all commands are written at the bottom:
+^G Get Help                   ^O WriteOut                   ^R Read File                  ^Y Prev Page                  ^K Cut Text                   ^C Cur Pos
+^X Exit                       ^J Justify                    ^W Where Is                   ^V Next Page                  ^U UnCut Text                 ^T To Spell
+you can write/modify text directly and use CTRL + O to save then CTRL + X to exit.
+```
+<br>
 
