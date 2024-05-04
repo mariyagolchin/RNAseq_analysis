@@ -130,6 +130,9 @@ screen -X -S 3207503.run_star quit
 
 
 # Command line, basics
+
+https://ginolhac.github.io/chip-seq/cli/
+
 ```bash
 
 pwd
