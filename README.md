@@ -162,12 +162,25 @@ check
 ls -l
 create a folder
 mkdir TEST
+```
 
-nano
+# nano
+
 often installed, it is easy to use as all commands are written at the bottom:
+
+```bash
+
 ^G Get Help                   ^O WriteOut                   ^R Read File                  ^Y Prev Page                  ^K Cut Text                   ^C Cur Pos
 ^X Exit                       ^J Justify                    ^W Where Is                   ^V Next Page                  ^U UnCut Text                 ^T To Spell
 you can write/modify text directly and use CTRL + O to save then CTRL + X to exit.
 ```
-<br>
 
+
+# How to Unzip .tar.gz in Linux using tar
+
+To unzip the .tar.gz file, use the tar command with the following arguments:
+
+```bash
+
+tar –xvzf [archive name]
+```
